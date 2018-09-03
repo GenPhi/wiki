@@ -3,11 +3,6 @@ steps:
 - task: Npm@1
   displayName: npm install
 
-- task: Gulp@0
-  inputs:
-    publishJUnitResults: "true"
-  displayName: Gulp
-
 - task: ArchiveFiles@1
   inputs:
     rootFolder: "$(System.DefaultWorkingDirectory)"
